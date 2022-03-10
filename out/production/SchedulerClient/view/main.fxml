@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="782.0" style="-fx-background-color: #777777;" stylesheets="@fx-styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane fx:id="tabPane" layoutX="3.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="613.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+         <tabs>
+            <Tab fx:id="appointmentsTab" text="Appointments">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="343.0" prefWidth="580.0" styleClass="tab_pane" />
+               </content>
+            </Tab>
+            <Tab fx:id="customersTab" text="Customers">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="tab_pane" />
+               </content>
+            </Tab>
+            <Tab fx:id="reportsTab" text="Reports">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="tab_pane" />
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Label id="app_title" fx:id="titleLabel" layoutX="12.0" layoutY="8.0" text="title" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="8.0">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <MenuButton id="user_menu" fx:id="userMenu" layoutX="679.0" layoutY="2.0" mnemonicParsing="false" text="username" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="2.0">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#requestLogout" text="Logout" />
+            <MenuItem mnemonicParsing="false" onAction="#requestExit" text="Exit" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

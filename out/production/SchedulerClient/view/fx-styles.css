@@ -1,0 +1,26 @@
+#main {
+	-fx-background-color: #777;
+}
+
+#app_title {
+	-fx-text-fill: #fff;
+	-fx-font-family: Arial, sans;
+	-fx-font-weight: bold;
+}
+
+.tab_pane {
+	-fx-background-color: #f3f3f3;
+}
+
+.screen_title {
+	-fx-font-family: Arial, sans;
+	-fx-font-weight: bold;
+}
+
+.table-view .column-header .label {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.combo-box.time_combo .list-cell {
+    -fx-padding: 0 0 0 8px;
+}

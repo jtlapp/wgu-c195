@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="520.0" style="-fx-padding: 0,0,0,0;" stylesheets="@fx-styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="formWindowTitle" layoutX="21.0" layoutY="21.0" text="Title">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="61.0" text="Appointment ID">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="appointmentTitleField" layoutX="133.0" layoutY="89.0" prefHeight="27.0" prefWidth="188.0" />
+      <Label layoutX="33.0" layoutY="95.0" text="Title">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idField" disable="true" editable="false" focusTraversable="false" layoutX="133.0" layoutY="54.0" prefHeight="27.0" prefWidth="104.0" promptText="auto-generated" />
+      <Label layoutX="33.0" layoutY="131.0" text="Description">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="descriptionField" layoutX="133.0" layoutY="125.0" prefHeight="27.0" prefWidth="362.0" />
+      <Label layoutX="33.0" layoutY="167.0" text="Type">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="typeField" layoutX="133.0" layoutY="161.0" prefHeight="27.0" prefWidth="125.0" />
+      <Label layoutX="33.0" layoutY="204.0" text="Location">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="locationField" layoutX="133.0" layoutY="197.0" prefHeight="27.0" prefWidth="188.0" />
+      <Label layoutX="33.0" layoutY="239.0" text="Contact">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="382.0" layoutY="422.0" mnemonicParsing="false" onAction="#requestSave" text="Save" />
+      <Button layoutX="440.0" layoutY="422.0" mnemonicParsing="false" onAction="#requestCancel" text="Cancel" />
+      <Label fx:id="errorMessageField" alignment="TOP_LEFT" layoutX="336.0" layoutY="175.0" prefHeight="216.0" prefWidth="170.0" text="error messages" visible="false" wrapText="true" />
+      <ComboBox fx:id="contactComboBox" layoutX="133.0" layoutY="234.0" prefHeight="27.0" prefWidth="188.0" />
+      <Label layoutX="33.0" layoutY="315.0" text="Date">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateField" layoutX="133.0" layoutY="308.0" />
+      <Label layoutX="33.0" layoutY="351.0" text="Start Time">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="startHourComboBox" layoutX="133.0" layoutY="344.0" prefHeight="27.0" prefWidth="55.0" styleClass="time_combo" />
+      <ComboBox fx:id="startMinsComboBox" layoutX="197.0" layoutY="344.0" prefHeight="27.0" prefWidth="60.0" styleClass="time_combo" />
+      <Label layoutX="33.0" layoutY="389.0" text="End Time">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="endHourComboBox" layoutX="133.0" layoutY="382.0" prefHeight="27.0" prefWidth="55.0" styleClass="time_combo" />
+      <ComboBox fx:id="endMinsComboBox" layoutX="197.0" layoutY="382.0" prefHeight="27.0" prefWidth="60.0" styleClass="time_combo" />
+      <Label layoutX="33.0" layoutY="276.0" text="Customer">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="customerComboBox" layoutX="133.0" layoutY="271.0" prefHeight="27.0" prefWidth="188.0" />
+      <Label fx:id="startZoneLabel" layoutX="269.0" layoutY="351.0" text="zone">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="endZoneLabel" layoutX="269.0" layoutY="389.0" text="zone">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
