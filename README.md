@@ -19,23 +19,22 @@ TBD: Make a package including all but JavaFX. Until then...
 
 The easiest way to run the program is as follows:
 
-(1) Open Intellij CE
-(2) Select "IntelliJ IDEA" on the menu bar.
-(3) Select "Preferences..."
-(4) Select "Path Variables" on the left.
-(5) Set variable PATH_TO_FX to the directory of your JavaFX library
-(e.g. /Library/javafx-sdk-11.0.2/lib).
-(6) Select "Run" and then "Run 'Main'" on the menu bar.
+1. Open Intellij CE
+2. Select "IntelliJ IDEA" on the menu bar.
+3. Select "Preferences..."
+4. Select "Path Variables" on the left.
+5. Set variable PATH_TO_FX to the directory of your JavaFX library (e.g. /Library/javafx-sdk-11.0.2/lib).
+6. Select "Run" and then "Run 'Main'" on the menu bar.
 
 To run the program from the command line using the supplied .class files:\*
 
-(1) Within a shell, cd to the project directory.
-(2) Within the project directory, cd to out/production/SchedulerClient
-(3) export PATH_TO_FX=/Library/javafx-sdk-11.0.2/lib
-(4) export PATH_TO_MYSQL_DRIVER=/Library/mysql-connector-java-8.0.23
-(5) java --module-path ${PATH_TO_FX}:${PATH_TO_MYSQL_DRIVER} --add-modules javafx.fxml,javafx.controls,javafx.graphics Main
+1. Within a shell, cd to the project directory.
+2. Within the project directory, cd to out/production/SchedulerClient
+3. export PATH_TO_FX=/Library/javafx-sdk-11.0.2/lib
+4. export PATH_TO_MYSQL_DRIVER=/Library/mysql-connector-java-8.0.23
+5. java --module-path ${PATH_TO_FX}:${PATH_TO_MYSQL_DRIVER} --add-modules javafx.fxml,javafx.controls,javafx.graphics Main
 
-- This should work on Mac and Linux/UNIX (bash shell). I don't know about Windows.
+\* This should work on Mac and Linux/UNIX (bash shell). I don't know about Windows.
 
 ## Using the Program
 
